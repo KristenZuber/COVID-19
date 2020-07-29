@@ -1,0 +1,28 @@
+{% extends "graphs/base.html" %}
+{% block content %}
+  <div class="jumbotron">
+  <h1 class="display-3">Anchorage County Alaska</h1>
+  <hr class="my-4">
+  <p class = "display-4">How did Alaska handle COVID-19?<br></p>
+  <p><b>Shelter-in-place: March 28 to May 20.</b></p>
+  <hr class="my-4">
+  <div class="row">
+  <ul>
+    {% for alaska in alaska reversed  %}
+    <div class="col-md-4">
+        <blockquote class="blockquote text-center">
+          <img style="height: 350px; width: 310%; display: center-block;" src= "{{ alaska.image.url }}" alt="Card image">
+        </blockquote>
+    </div>
+    <p>{{ alaska.description }}</p>
+    <hr class="my-4">
+    {% endfor %}
+  </ul>
+</div>
+<p>For Alaska, predictions can be made using the formula <b>y = 7.0693x - 179.8722</b>.
+  The R² = 0.787, which is one of the strongest correlations in this study. Furthermore, the p-value is much lower than 0.01, which indicates that there is likely a relationship here.
+</p>
+  <p class="lead">
+  </p>
+</div>
+{% endblock content %}

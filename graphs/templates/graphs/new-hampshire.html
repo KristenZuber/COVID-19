@@ -1,0 +1,29 @@
+{% extends "graphs/base.html" %}
+{% block content %}
+  <div class="jumbotron">
+  <h1 class="display-3">Hillsborough County New Hampshire</h1>
+  <hr class="my-4">
+  <p class = "display-4">How did New Hampshire handle COVID-19?<br></p>
+  <p><b>Shelter-in-place: March 27 to May 15.</b></p>
+  <hr class="my-4">
+  <div class="row">
+  <ul>
+    {% for newhampshire in newhampshire %}
+    <div class="col-md-4">
+        <blockquote class="blockquote text-center">
+          <img style="height: 350px; width: 310%; display: center-block;" src= "{{ newhampshire.image.url }}" alt="Card image">
+        </blockquote>
+    </div>
+    <p>{{ newhampshire.description }}</p>
+    <hr class="my-4">
+    {% endfor %}
+  </ul>
+</div>
+<p>For New Hampshire, predictions can be made using the formula <b>y = 59.9793x - 2218.6178</b>.
+  The R² = 0.729, which is one of the strongest correlations in the study. Furthermore,
+  the p-value is much lower than 0.01, which indicates that this correlation is likely not due to chance alone.
+</p>
+  <p class="lead">
+  </p>
+</div>
+{% endblock content %}

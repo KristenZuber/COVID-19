@@ -1,0 +1,29 @@
+{% extends "graphs/base.html" %}
+{% block content %}
+  <div class="jumbotron">
+  <h1 class="display-3">Maricopa County Arizona</h1>
+  <hr class="my-4">
+  <p class = "display-4">How did Arizona handle COVID-19?<br></p>
+  <p><b>Shelter-in-place: March 31 to {undetermined as of 7/23/2020}.</b></p>
+  <hr class="my-4">
+  <div class="row">
+  <ul>
+    {% for arizona in arizona %}
+    <div class="col-md-4">
+        <blockquote class="blockquote text-center">
+          <img style="height: 350px; width: 310%; display: center-block;" src= "{{ arizona.image.url }}" alt="Card image">
+        </blockquote>
+    </div>
+    <p>{{ arizona.description }}</p>
+    <hr class="my-4">
+    {% endfor %}
+  </ul>
+</div>
+<p>For Arizona, predictions can be made using the formula <b>y = 552.5456x - 4.031e+04</b>.
+  The R² = 0.399, which indicates that this is not the strongest correlation in the study; However,
+  the p-value is lower than 0.01, which indicates that this correlation is still likely not due to chance alone.
+</p>
+<p class="lead">
+  </p>
+</div>
+{% endblock content %}

@@ -1,0 +1,29 @@
+{% extends "graphs/base.html" %}
+{% block content %}
+  <div class="jumbotron">
+  <h1 class="display-3">Jefferson County Kentucky</h1>
+  <hr class="my-4">
+  <p class = "display-4">How did Kentucky handle COVID-19?<br></p>
+  <p><b>Shelter-in-place: March 26 to May 22.</b></p>
+  <hr class="my-4">
+  <div class="row">
+  <ul>
+    {% for kentucky in kentucky %}
+    <div class="col-md-4">
+        <blockquote class="blockquote text-center">
+          <img style="height: 350px; width: 310%; display: center-block;" src= "{{ kentucky.image.url }}" alt="Card image">
+        </blockquote>
+    </div>
+    <p>{{ kentucky.description }}</p>
+    <hr class="my-4">
+    {% endfor %}
+  </ul>
+</div>
+<p>For Kentucky, predictions can be made using the formula <b>y = 67.6330x - 3302.8391</b>.
+  The R² = 0.600, which is one of the stronger correlations in the study. Furthermore,
+  the p-value is much lower than 0.01, which indicates that this correlation is likely not due to chance alone.
+</p>
+  <p class="lead">
+  </p>
+</div>
+{% endblock content %}

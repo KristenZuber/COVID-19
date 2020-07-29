@@ -1,0 +1,29 @@
+{% extends "graphs/base.html" %}
+{% block content %}
+  <div class="jumbotron">
+  <h1 class="display-3">East Baton Rouge County Louisiana</h1>
+  <hr class="my-4">
+  <p class = "display-4">How did Louisiana handle COVID-19?<br></p>
+  <p><b>Shelter-in-place: March 23 to {undetermined as of 7/23/2020}.</b></p>
+  <hr class="my-4">
+  <div class="row">
+  <ul>
+    {% for louisiana in louisiana %}
+    <div class="col-md-4">
+        <blockquote class="blockquote text-center">
+          <img style="height: 350px; width: 310%; display: center-block;" src= "{{ louisiana.image.url }}" alt="Card image">
+        </blockquote>
+    </div>
+    <p>{{ louisiana.description }}</p>
+    <hr class="my-4">
+    {% endfor %}
+  </ul>
+</div>
+<p>For Louisiana, predictions can be made using the formula <b>y = 135.8464x - 9110.6627</b>.
+  The R² = 0.497, which is one of the weaker correlations in the study. Nevertheless,
+  the p-value is much lower than 0.01, which indicates that this correlation is likely not due to chance alone.
+</p>
+  <p class="lead">
+  </p>
+</div>
+{% endblock content %}

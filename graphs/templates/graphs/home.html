@@ -1,0 +1,82 @@
+{% extends "graphs/base.html" %}
+{% block content %}
+  <div class="jumbotron">
+  <h2 class="display-3">What is COVID-19?</h2>
+  <hr class="my-4">
+  <p>COVID-19 is a virus, which originated in Wuhan, China in 2019.
+    It has since become a global pandemic as it spread quickly throughout the world.
+    One of the concerns regarding COVID-19 is how temperature will effect the spread
+    of the virus. In order to determine this, an analysis was performed on the COVID-19
+    data with the number of cases per day in a specific county and the temperature
+    data for those counties on the respective days. A linear regression analysis has allowed for a trend
+    line to be formulated, which allows for predictions to be made.</p>
+  <p class="lead">
+  </p>
+     <h4 class="display-3">State Data:</h4>
+     <hr class="my-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-alabama' %}">Alabama</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-alaska' %}">Alaska</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-arizona' %}">Arizona</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-arkansas' %}">Arkansas</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-california' %}">California</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-colorado' %}">Colorado</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-connecticut' %}">Connecticut</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-delaware' %}">Delaware</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-florida' %}">Florida</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-georgia' %}">Georgia</a></br>
+      </div>
+      <div class="col-sm">
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-hawaii' %}">Hawaii</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-idaho' %}">Idaho</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-illinois' %}">Illinois</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-indiana' %}">Indiana</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-iowa' %}">Iowa</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-kansas' %}">Kansas</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-kentucky' %}">Kentucky</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-louisiana' %}">Louisiana</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-maine' %}">Maine</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-maryland' %}">Maryland</a></br>
+      </div>
+      <div class="col-sm">
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-massachusetts' %}">Massachusetts</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-michigan' %}">Michigan</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-minnesota' %}">Minnesota</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-mississippi' %}">Mississippi</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-missouri' %}">Missouri</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-montana' %}">Montana</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-nebraska' %}">Nebraska</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-nevada' %}">Nevada</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-new-hampshire' %}">New Hampshire</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-new-jersey' %}">New Jersey</a></br>
+      </div>
+      <div class="col-sm">
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-new-mexico' %}">New Mexico</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-new-york' %}">New York</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-north-carolina' %}">North Carolina</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-north-dakota' %}">North Dakota</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-ohio' %}">Ohio</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-oklahoma' %}">Oklahoma</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-oregon' %}">Oregon</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-pennsylvania' %}">Pennsylvania</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-rhode-island' %}">Rhode Island</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-south-carolina' %}">South Carolina</a></br>
+      </div>
+      <div class="col-sm">
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-south-dakota' %}">South Dakota</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-tennessee' %}">Tennessee</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-texas' %}">Texas</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-utah' %}">Utah</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-vermont' %}">Vermont</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-virginia' %}">Virginia</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-washington' %}">Washington</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-west-virginia' %}">West Virginia</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-wisconsin' %}">Wisconsin</a></br>
+        <br><a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'graphs-wyoming' %}">Wyoming</a></br>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

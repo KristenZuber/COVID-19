@@ -1,0 +1,29 @@
+{% extends "graphs/base.html" %}
+{% block content %}
+  <div class="jumbotron">
+  <h1 class="display-3">King County Washington</h1>
+  <hr class="my-4">
+  <p class = "display-4">How did Washington handle COVID-19?<br></p>
+  <p><b>Shelter-in-place: March 23 to {paused reopening as of 7/23/2020}.</b></p>
+  <hr class="my-4">
+  <div class="row">
+  <ul>
+    {% for washington in washington %}
+    <div class="col-md-4">
+        <blockquote class="blockquote text-center">
+          <img style="height: 350px; width: 310%; display: center-block;" src= "{{ washington.image.url }}" alt="Card image">
+        </blockquote>
+    </div>
+    <p>{{ washington.description }}</p>
+    <hr class="my-4">
+    {% endfor %}
+  </ul>
+</div>
+<p>For Washington, predictions can be made using the formula <b>y = 305.9589x - 1.366e+04</b>.
+  The R² = 0.669, which is one of the stronger correlations in the study. Furthermore,
+  the p-value is much lower than 0.01, which indicates that this correlation is likely not due to chance alone.
+</p>
+  <p class="lead">
+  </p>
+</div>
+{% endblock content %}
