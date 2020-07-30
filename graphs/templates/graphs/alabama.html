@@ -1,5 +1,6 @@
 {% extends "graphs/base.html" %}
 {% load static %}
+{% load crispy_forms_tags %}
 {% block content %}
   <div class="jumbotron">
   <h1 class="display-3">Jefferson County Alabama</h1>
@@ -24,7 +25,9 @@
   The R² = 0.4785, which indicates that this is not the strongest correlation; However,
   the p-value is much lower than 0.01, which indicates that this correlation is likely not due to chance alone.
 </p>
-  <p class="lead">
-  </p>
+    <legend class = "border-bottom mb-4">Do you want to make a prediction?</legend>
+      <a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'al-predict' %}">Yes!</a>
+    <p class="lead">
+    </p>
 </div>
 {% endblock content %}

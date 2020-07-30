@@ -1,6 +1,307 @@
 from django.db import models
 
-# Create your models here.
+# Create your prediction models here.
+class AlPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class AkPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class AzPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class ArPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class CaPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class CoPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class CtPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class DePredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class FlPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class GaPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class HiPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class IdPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class IlPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class InPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class IaPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class KsPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class KyPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class LaPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class MePredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class MdPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class MaPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class MiPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class MnPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class MsPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class MoPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class MtPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class NePredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class NvPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class NhPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class NjPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class NmPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class NyPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class NcPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class NdPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class OhPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class OkPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class OrPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class PaPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class RiPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class ScPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class SdPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class TnPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class TxPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class UtPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class VtPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class VaPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class WaPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class WvPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class WiPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+class WyPredict(models.Model):
+    x = models.FloatField(default = 1)
+
+    def __str__(self):
+       return self.name
+
+# Create your state models here.
 class Alabama(models.Model):
     title = models.TextField()
     image = models.ImageField(upload_to='images/')

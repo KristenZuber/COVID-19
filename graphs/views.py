@@ -1,6 +1,58 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-from django.views.generic import ListView
+from django.shortcuts import render, redirect
+from django.http import HttpResponse, HttpResponseRedirect
+from django.views.generic import ListView, CreateView
+from .forms import (
+AlForm,
+AkForm,
+AzForm,
+ArForm,
+CaForm,
+CoForm,
+CtForm,
+FlForm,
+GaForm,
+HiForm,
+IdForm,
+IlForm,
+InForm,
+IaForm,
+KsForm,
+KyForm,
+LaForm,
+MeForm,
+MdForm,
+MaForm,
+MiForm,
+MnForm,
+MsForm,
+MoForm,
+MtForm,
+NeForm,
+NvForm,
+NhForm,
+NjForm,
+NmForm,
+NyForm,
+NcForm,
+NdForm,
+OhForm,
+OkForm,
+OrForm,
+PaForm,
+RiForm,
+ScForm,
+SdForm,
+TnForm,
+TxForm,
+UtForm,
+VtForm,
+VaForm,
+WaForm,
+WvForm,
+WiForm,
+WyForm
+)
+from django.contrib import messages
 from .models import (
 Alabama,
 Alaska,
@@ -77,6 +129,607 @@ def info(request):
 def conclusion(request):
     template_name = 'graphs/conclusion.html'
     return render(request, 'graphs/conclusion.html')
+
+def alcalculate(request):
+    if request.method == 'POST':
+        form = AlForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {72.3261 * x - 4359.2334}')
+            return redirect('graphs-alabama')
+    else:
+        form = AlForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def akcalculate(request):
+    if request.method == 'POST':
+        form = AkForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {7.0693 * x - 179.8722}')
+            return redirect('graphs-alaska')
+    else:
+        form = AkForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def azcalculate(request):
+    if request.method == 'POST':
+        form = AzForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {552.5456 * x - 40310}')
+            return redirect('graphs-arizona')
+    else:
+        form = AzForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def arcalculate(request):
+    if request.method == 'POST':
+        form = ArForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {32.4029 * x - 1803.5874}')
+            return redirect('graphs-arkansas')
+    else:
+        form = ArForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def cacalculate(request):
+    if request.method == 'POST':
+        form = CaForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {1681.8456 * x - 97680}')
+            return redirect('graphs-california')
+    else:
+        form = CaForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def cocalculate(request):
+    if request.method == 'POST':
+        form = CoForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {114.4650 * x - 4823.6556}')
+            return redirect('graphs-colorado')
+    else:
+        form = CoForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def ctcalculate(request):
+    if request.method == 'POST':
+        form = CtForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {417.7299 * x - 16990}')
+            return redirect('graphs-connecticut')
+    else:
+        form = CtForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def decalculate(request):
+    if request.method == 'POST':
+        form = DeForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {105.0485 * x - 5025.3331}')
+            return redirect('graphs-delaware')
+    else:
+        form = DeForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def flcalculate(request):
+    if request.method == 'POST':
+        form = FlForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {1434.3040 * x - 10700}')
+            return redirect('graphs-florida')
+    else:
+        form = FlForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def gacalculate(request):
+    if request.method == 'POST':
+        form = GaForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {134.4924 * x - 7233.7582}')
+            return redirect('graphs-georgia')
+    else:
+        form = GaForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def hicalculate(request):
+    if request.method == 'POST':
+        form = HiForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {55.9353 * x - 4405.2253}')
+            return redirect('graphs-hawaii')
+    else:
+        form = HiForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def idcalculate(request):
+    if request.method == 'POST':
+        form = IdForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {27.0460 * x - 1200.8220}')
+            return redirect('graphs-idaho')
+    else:
+        form = IdForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def ilcalculate(request):
+    if request.method == 'POST':
+        form = IlForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {1685.9513 * x - 61330}')
+            return redirect('graphs-illinois')
+    else:
+        form = IlForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def iacalculate(request):
+    if request.method == 'POST':
+        form = IaForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {92.1682 * x - 3849.5171}')
+            return redirect('graphs-iowa')
+    else:
+        form = IaForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def incalculate(request):
+    if request.method == 'POST':
+        form = InForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {210.0544 * x - 8571.0272}')
+            return redirect('graphs-indiana')
+    else:
+        form = InForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def kscalculate(request):
+    if request.method == 'POST':
+        form = KsForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {23.0244 * x - 1026.8946}')
+            return redirect('graphs-kansas')
+    else:
+        form = KsForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def kycalculate(request):
+    if request.method == 'POST':
+        form = KyForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {67.6330 * x - 3302.8391}')
+            return redirect('graphs-kentucky')
+    else:
+        form = KyForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def lacalculate(request):
+    if request.method == 'POST':
+        form = LaForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {135.8464 * x - 9110.6627}')
+            return redirect('graphs-louisiana')
+    else:
+        form = LaForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def mecalculate(request):
+    if request.method == 'POST':
+        form = MeForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {33.1832 * x - 1240.5371}')
+            return redirect('graphs-maine')
+    else:
+        form = MeForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def mdcalculate(request):
+    if request.method == 'POST':
+        form = MdForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {312.8652 * x - 15370}')
+            return redirect('graphs-maryland')
+    else:
+        form = MdForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def macalculate(request):
+    if request.method == 'POST':
+        form = MaForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {510.3481 * x - 19110}')
+            return redirect('graphs-massachusetts')
+    else:
+        form = MaForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def micalculate(request):
+    if request.method == 'POST':
+        form = MiForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {426.0481 * x - 13500}')
+            return redirect('graphs-michigan')
+    else:
+        form = MiForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def mncalculate(request):
+    if request.method == 'POST':
+        form = MnForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {172.6972 * x - 6334.2882}')
+            return redirect('graphs-minnesota')
+    else:
+        form = MnForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def mscalculate(request):
+    if request.method == 'POST':
+        form = MsForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {38.7125 * x - 2438.3240}')
+            return redirect('graphs-mississippi')
+    else:
+        form = MsForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def mocalculate(request):
+    if request.method == 'POST':
+        form = MoForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {108.5834 * x - 4683.2575}')
+            return redirect('graphs-missouri')
+    else:
+        form = MoForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def mtcalculate(request):
+    if request.method == 'POST':
+        form = MtForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {2.2117 * x - 69.9729}')
+            return redirect('graphs-montana')
+    else:
+        form = MtForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def necalculate(request):
+    if request.method == 'POST':
+        form = NeForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {98.8781 * x - 4463.4137}')
+            return redirect('graphs-nebraska')
+    else:
+        form = NeForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def nvcalculate(request):
+    if request.method == 'POST':
+        form = NvForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {217.9531 * x - 13850}')
+            return redirect('graphs-nevada')
+    else:
+        form = NvForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def nhcalculate(request):
+    if request.method == 'POST':
+        form = NhForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {59.9793 * x - 2218.6178}')
+            return redirect('graphs-new-hampshire')
+    else:
+        form = NhForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def njcalculate(request):
+    if request.method == 'POST':
+        form = NjForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {412.4337 * x - 15980}')
+            return redirect('graphs-new-jersey')
+    else:
+        form = NjForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def nmcalculate(request):
+    if request.method == 'POST':
+        form = NmForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {41.0094 * x - 2298.2193}')
+            return redirect('graphs-new-mexico')
+    else:
+        form = NmForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def nycalculate(request):
+    if request.method == 'POST':
+        form = NyForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {4765.4244 * x - 188600}')
+            return redirect('graphs-new-york')
+    else:
+        form = NyForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def nccalculate(request):
+    if request.method == 'POST':
+        form = NcForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {174.2733 * x - 10100}')
+            return redirect('graphs-north-carolina')
+    else:
+        form = NcForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def ndcalculate(request):
+    if request.method == 'POST':
+        form = NdForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {31.2907 * x - 936.0486}')
+            return redirect('graphs-north-dakota')
+    else:
+        form = NdForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def ohcalculate(request):
+    if request.method == 'POST':
+        form = OhForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {146.9430 * x - 6367.5828}')
+            return redirect('graphs-ohio')
+    else:
+        form = OhForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def okcalculate(request):
+    if request.method == 'POST':
+        form = OkForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {36.6413 * x - 1921.0990}')
+            return redirect('graphs-oklahoma')
+    else:
+        form = OkForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def orcalculate(request):
+    if request.method == 'POST':
+        form = OrForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {45.0619 * x - 2162.8279}')
+            return redirect('graphs-oregon')
+    else:
+        form = OrForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def pacalculate(request):
+    if request.method == 'POST':
+        form = PaForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {574.7566 * x - 2.568e+04}')
+            return redirect('graphs-pennsylvania')
+    else:
+        form = PaForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def ricalculate(request):
+    if request.method == 'POST':
+        form = RiForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {279.2690 * x - 12890}')
+            return redirect('graphs-rhode-island')
+    else:
+        form = RiForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def sccalculate(request):
+    if request.method == 'POST':
+        form = ScForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {75.1662 * x - 4418.8077}')
+            return redirect('graphs-south-carolina')
+    else:
+        form = ScForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def sdcalculate(request):
+    if request.method == 'POST':
+        form = SdForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {59.2707 * x - 1831.7510}')
+            return redirect('graphs-south-dakota')
+    else:
+        form = SdForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def tncalculate(request):
+    if request.method == 'POST':
+        form = TnForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {167.2234 * x - 9287.2448}')
+            return redirect('graphs-tennessee')
+    else:
+        form = TnForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def txcalculate(request):
+    if request.method == 'POST':
+        form = TxForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {528.5798 * x - 35280}')
+            return redirect('graphs-texas')
+    else:
+        form = TxForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def utcalculate(request):
+    if request.method == 'POST':
+        form = UtForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {148.8861 * x - 6724.3751}')
+            return redirect('graphs-utah')
+    else:
+        form = UtForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def vtcalculate(request):
+    if request.method == 'POST':
+        form = VtForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {9.7194 * x - 264.7687}')
+            return redirect('graphs-vermont')
+    else:
+        form = VtForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def vacalculate(request):
+    if request.method == 'POST':
+        form = VaForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {304.0044 * x - 15550}')
+            return redirect('graphs-virginia')
+    else:
+        form = VaForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def wacalculate(request):
+    if request.method == 'POST':
+        form = WaForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {305.9589 * x - 13660}')
+            return redirect('graphs-washington')
+    else:
+        form = WaForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def wvcalculate(request):
+    if request.method == 'POST':
+        form = WvForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {5.3579 * x - 240.0965}')
+            return redirect('graphs-west-virginia')
+    else:
+        form = WvForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def wicalculate(request):
+    if request.method == 'POST':
+        form = WiForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {181.1103 * x - 6667.8346}')
+            return redirect('graphs-wisconsin')
+    else:
+        form = WiForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
+def wycalculate(request):
+    if request.method == 'POST':
+        form = WyForm(request.POST)
+        if form.is_valid():
+            form.save()
+            x = form.cleaned_data.get('x')
+            messages.success(request, f'The predicted number of cases will be about {3.7826 * x - 118.9053}')
+            return redirect('graphs-wyoming')
+    else:
+        form = WyForm()
+    return render(request, 'graphs/alpredict.html', {'form': form})
+
 
 class AlabamaListView(ListView):
     model = Alabama
