@@ -3,8 +3,11 @@
   <div class="jumbotron">
   <h1 class="display-3">Maricopa County Arizona</h1>
   <hr class="my-4">
-  <p class = "display-4">How did Arizona handle COVID-19?<br></p>
-  <p><b>Shelter-in-place: March 31 to {undetermined as of 7/23/2020}.</b></p>
+  <legend class = "border-bottom mb-4">How did Arizona handle COVID-19?<br></legend>
+  <p>Shelter-in-place: March 31 to April 30.</p>
+  <p>Reopening status: Reopening</p>
+  <legend class = "border-bottom mb-4">Population Density: <br></legend>
+  <p>415 people per square mile</p>
   <hr class="my-4">
   <div class="row">
   <ul>
@@ -19,10 +22,7 @@
     {% endfor %}
   </ul>
 </div>
-<p>For Arizona, predictions can be made using the formula <b>y = 552.5456x - 4.031e+04</b>.
-  The R² = 0.399, which indicates that this is not the strongest correlation in the study; However,
-  the p-value is lower than 0.01, which indicates that this correlation is still likely not due to chance alone.
-</p>
+
   <legend class = "border-bottom mb-4">Do you want to make a prediction?</legend>
     <a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'az-predict' %}">Yes!</a>
 <p class="lead">

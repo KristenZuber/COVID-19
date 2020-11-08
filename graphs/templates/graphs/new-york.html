@@ -1,10 +1,13 @@
 {% extends "graphs/base.html" %}
 {% block content %}
   <div class="jumbotron">
-  <h1 class="display-3">New York City County New York</h1>
+  <h1 class="display-3">New York City, New York</h1>
   <hr class="my-4">
-  <p class = "display-4">How did New York handle COVID-19?<br></p>
-  <p><b>Shelter-in-place: March 22 to May 15.</b></p>
+  <legend class = "border-bottom mb-4">How did New York handle COVID-19?<br></legend>
+  <p>Shelter-in-place: March 22 to May 15.</p>
+  <p>Reopening status: Reversing</p>
+  <legend class = "border-bottom mb-4">Population Density: <br></legend>
+  <p>27,709 people per square mile</p>
   <hr class="my-4">
   <div class="row">
   <ul>
@@ -19,10 +22,7 @@
     {% endfor %}
   </ul>
 </div>
-<p>For New York, predictions can be made using the formula <b>y = 4765.4244x - 1.886e+05</b>.
-  The R² = 0.592, which is not one of the stronger correlations in the study. Nevertheless,
-  the p-value is much lower than 0.01, which indicates that this correlation is likely not due to chance alone.
-</p>
+
 <legend class = "border-bottom mb-4">Do you want to make a prediction?</legend>
   <a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'ny-predict' %}">Yes!</a>
   <p class="lead">

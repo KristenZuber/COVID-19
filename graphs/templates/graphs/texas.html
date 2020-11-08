@@ -3,8 +3,11 @@
   <div class="jumbotron">
   <h1 class="display-3">Harris County Texas</h1>
   <hr class="my-4">
-  <p class = "display-4">How did Texas handle COVID-19?<br></p>
-  <p><b>Shelter-in-place: April 2 to {undetermined as of 7/23/2020}.</b></p>
+  <legend class = "border-bottom mb-4">How did Texas handle COVID-19?<br></legend>
+  <p>Shelter-in-place: April 2 to April 30.</p>
+  <p>Reopening status: Reversing</p>
+  <legend class = "border-bottom mb-4">Population Density: <br></legend>
+  <p>2,302 people per square mile</p>
   <hr class="my-4">
   <div class="row">
   <ul>
@@ -19,10 +22,7 @@
     {% endfor %}
   </ul>
 </div>
-<p>For Texas, predictions can be made using the formula <b>y = 528.5798x - 3.528e+04</b>.
-  The R² = 0.400, which is one of the weakest correlations in the study. Nevertheless,
-  the p-value is much lower than 0.01, which indicates that this correlation is likely not due to chance alone.
-</p>
+
 <legend class = "border-bottom mb-4">Do you want to make a prediction?</legend>
   <a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'tx-predict' %}">Yes!</a>
   <p class="lead">

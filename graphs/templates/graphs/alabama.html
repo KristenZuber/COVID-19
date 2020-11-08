@@ -4,10 +4,12 @@
 {% block content %}
   <div class="jumbotron">
   <h1 class="display-3">Jefferson County Alabama</h1>
-  <hr class="my-4">
-  <p class = "display-4">How did Alabama handle COVID-19?<br></p>
-  <p><b>Shelter-in-place: April 4 to {paused reopening as of 7/23/2020}.</b></p>
-  <hr class="my-4">
+  <b><hr class="my-4"></b>
+  <legend class = "border-bottom mb-4">How did Alabama handle COVID-19?<br></legend>
+  <p>Shelter-in-place: April 4 to April 30.</p>
+  <p>Reopening status: Paused.</p>
+  <legend class = "border-bottom mb-4">Population Density: <br></legend>
+  <p>595 people per square mile</p>
   <div class="row">
   <ul>
     {% for bama in alabama reversed  %}
@@ -21,10 +23,7 @@
     {% endfor %}
   </ul>
 </div>
-<p>For Alabama, predictions can be made using the formula <b>y = 72.3261x - 4359.2334</b>.
-  The R² = 0.4785, which indicates that this is not the strongest correlation; However,
-  the p-value is much lower than 0.01, which indicates that this correlation is likely not due to chance alone.
-</p>
+
     <legend class = "border-bottom mb-4">Do you want to make a prediction?</legend>
       <a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'al-predict' %}">Yes!</a>
     <p class="lead">

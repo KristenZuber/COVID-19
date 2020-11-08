@@ -3,8 +3,11 @@
   <div class="jumbotron">
   <h1 class="display-3">Anchorage County Alaska</h1>
   <hr class="my-4">
-  <p class = "display-4">How did Alaska handle COVID-19?<br></p>
-  <p><b>Shelter-in-place: March 28 to May 20.</b></p>
+  <legend class = "border-bottom mb-4">How did Alaska handle COVID-19?<br></legend>
+  <p>Shelter-in-place: March 28 to April 24.</p>
+  <p>Reopening status: Reopened</p>
+  <legend class = "border-bottom mb-4">Population Density: <br></legend>
+  <p>167 people per square mile</p>
   <hr class="my-4">
   <div class="row">
   <ul>
@@ -19,9 +22,7 @@
     {% endfor %}
   </ul>
 </div>
-<p>For Alaska, predictions can be made using the formula <b>y = 7.0693x - 179.8722</b>.
-  The R² = 0.787, which is one of the strongest correlations in this study. Furthermore, the p-value is much lower than 0.01, which indicates that there is likely a relationship here.
-</p>
+
   <legend class = "border-bottom mb-4">Do you want to make a prediction?</legend>
     <a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'ak-predict' %}">Yes!</a>
   <p class="lead">

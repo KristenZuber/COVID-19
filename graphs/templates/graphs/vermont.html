@@ -3,8 +3,11 @@
   <div class="jumbotron">
   <h1 class="display-3">Chittenden County Vermont</h1>
   <hr class="my-4">
-  <p class = "display-4">How did Vermont handle COVID-19?<br></p>
-  <p><b>Shelter-in-place: March 25 to May 15.</b></p>
+  <legend class = "border-bottom mb-4">How did Vermont handle COVID-19?<br></legend>
+  <p>Shelter-in-place: March 25 to May 15.</p>
+  <p>Reopening status: Reopened</p>
+  <legend class = "border-bottom mb-4">Population Density: <br></legend>
+  <p>292 people per square mile</p>
   <hr class="my-4">
   <div class="row">
   <ul>
@@ -19,10 +22,7 @@
     {% endfor %}
   </ul>
 </div>
-<p>For Vermont, predictions can be made using the formula <b>y = 9.7194x - 264.7687</b>.
-  The R² = 0.674, which is one of the stronger correlations in the study. Furthermore,
-  the p-value is much lower than 0.01, which indicates that this correlation is likely not due to chance alone.
-</p>
+
 <legend class = "border-bottom mb-4">Do you want to make a prediction?</legend>
   <a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'vt-predict' %}">Yes!</a>
   <p class="lead">

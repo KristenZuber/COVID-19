@@ -136,7 +136,7 @@ def alcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {72.3261 * x - 4359.2334}')
+            messages.success(request, f'The predicted number of cases will be about {-454.5796 * x + 51000}')
             return redirect('graphs-alabama')
     else:
         form = AlForm()
@@ -148,7 +148,7 @@ def akcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {7.0693 * x - 179.8722}')
+            messages.success(request, f'The predicted number of cases will be about {-153.9462 * x + 11830}')
             return redirect('graphs-alaska')
     else:
         form = AkForm()
@@ -160,7 +160,7 @@ def azcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {552.5456 * x - 40310}')
+            messages.success(request, f'The predicted number of cases will be about {85.1413 * x + 90860}')
             return redirect('graphs-arizona')
     else:
         form = AzForm()
@@ -172,7 +172,7 @@ def arcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {32.4029 * x - 1803.5874}')
+            messages.success(request, f'The predicted number of cases will be about {-236.9887 * x + 25760}')
             return redirect('graphs-arkansas')
     else:
         form = ArForm()
@@ -184,7 +184,7 @@ def cacalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {1681.8456 * x - 97680}')
+            messages.success(request, f'The predicted number of cases will be about {4273.1887 * x - 180800}')
             return redirect('graphs-california')
     else:
         form = CaForm()
@@ -196,7 +196,7 @@ def cocalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {114.4650 * x - 4823.6556}')
+            messages.success(request, f'The predicted number of cases will be about {-67.8843 * x + 15710}')
             return redirect('graphs-colorado')
     else:
         form = CoForm()
@@ -208,7 +208,7 @@ def ctcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {417.7299 * x - 16990}')
+            messages.success(request, f'The predicted number of cases will be about {-89.2710 * x + 25100}')
             return redirect('graphs-connecticut')
     else:
         form = CtForm()
@@ -220,7 +220,7 @@ def decalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {105.0485 * x - 5025.3331}')
+            messages.success(request, f'The predicted number of cases will be about {-167.7685 * x + 21010}')
             return redirect('graphs-delaware')
     else:
         form = DeForm()
@@ -232,7 +232,7 @@ def flcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {1434.3040 * x - 10700}')
+            messages.success(request, f'The predicted number of cases will be about {1664.3186 * x - 34680}')
             return redirect('graphs-florida')
     else:
         form = FlForm()
@@ -244,7 +244,7 @@ def gacalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {134.4924 * x - 7233.7582}')
+            messages.success(request, f'The predicted number of cases will be about {-493.1066 * x + 59160}')
             return redirect('graphs-georgia')
     else:
         form = GaForm()
@@ -256,7 +256,7 @@ def hicalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {55.9353 * x - 4405.2253}')
+            messages.success(request, f'The predicted number of cases will be about {1389.4142 * x - 117700}')
             return redirect('graphs-hawaii')
     else:
         form = HiForm()
@@ -268,7 +268,7 @@ def idcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {27.0460 * x - 1200.8220}')
+            messages.success(request, f'The predicted number of cases will be about {1.0346 * x + 7656.1003}')
             return redirect('graphs-idaho')
     else:
         form = IdForm()
@@ -280,7 +280,7 @@ def ilcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {1685.9513 * x - 61330}')
+            messages.success(request, f'The predicted number of cases will be about {-1221.9964 * x + 208800}')
             return redirect('graphs-illinois')
     else:
         form = IlForm()
@@ -292,7 +292,7 @@ def iacalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {92.1682 * x - 3849.5171}')
+            messages.success(request, f'The predicted number of cases will be about {-216.6101 * x + 28150}')
             return redirect('graphs-iowa')
     else:
         form = IaForm()
@@ -304,7 +304,7 @@ def incalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {210.0544 * x - 8571.0272}')
+            messages.success(request, f'The predicted number of cases will be about {-350.9481 * x + 44430}')
             return redirect('graphs-indiana')
     else:
         form = InForm()
@@ -316,7 +316,7 @@ def kscalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {23.0244 * x - 1026.8946}')
+            messages.success(request, f'The predicted number of cases will be about {-255.0007 * x + 27040}')
             return redirect('graphs-kansas')
     else:
         form = KsForm()
@@ -328,7 +328,7 @@ def kycalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {67.6330 * x - 3302.8391}')
+            messages.success(request, f'The predicted number of cases will be about {-460.8030 * x + 47570}')
             return redirect('graphs-kentucky')
     else:
         form = KyForm()
@@ -340,7 +340,7 @@ def lacalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {135.8464 * x - 9110.6627}')
+            messages.success(request, f'The predicted number of cases will be about {-176.2206 * x + 26180}')
             return redirect('graphs-louisiana')
     else:
         form = LaForm()
@@ -352,7 +352,7 @@ def mecalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {33.1832 * x - 1240.5371}')
+            messages.success(request, f'The predicted number of cases will be about {-6.3452 * x + 2448.3052}')
             return redirect('graphs-maine')
     else:
         form = MeForm()
@@ -364,7 +364,7 @@ def mdcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {312.8652 * x - 15370}')
+            messages.success(request, f'The predicted number of cases will be about {-230.9491 * x + 37000}')
             return redirect('graphs-maryland')
     else:
         form = MdForm()
@@ -376,7 +376,7 @@ def macalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {510.3481 * x - 19110}')
+            messages.success(request, f'The predicted number of cases will be about {-101.2228 * x + 32400}')
             return redirect('graphs-massachusetts')
     else:
         form = MaForm()
@@ -388,7 +388,7 @@ def micalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {426.0481 * x - 13500}')
+            messages.success(request, f'The predicted number of cases will be about {-367.7964 * x + 57330}')
             return redirect('graphs-michigan')
     else:
         form = MiForm()
@@ -400,7 +400,7 @@ def mncalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {172.6972 * x - 6334.2882}')
+            messages.success(request, f'The predicted number of cases will be about {-406.1556 * x + 50390}')
             return redirect('graphs-minnesota')
     else:
         form = MnForm()
@@ -412,7 +412,7 @@ def mscalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {38.7125 * x - 2438.3240}')
+            messages.success(request, f'The predicted number of cases will be about {-125.7777 * x + 15640}')
             return redirect('graphs-mississippi')
     else:
         form = MsForm()
@@ -424,7 +424,7 @@ def mocalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {108.5834 * x - 4683.2575}')
+            messages.success(request, f'The predicted number of cases will be about {-610.6180 * x + 66070}')
             return redirect('graphs-missouri')
     else:
         form = MoForm()
@@ -436,7 +436,7 @@ def mtcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {2.2117 * x - 69.9729}')
+            messages.success(request, f'The predicted number of cases will be about {-33.0250 * x + 4210.8740}')
             return redirect('graphs-montana')
     else:
         form = MtForm()
@@ -448,7 +448,7 @@ def necalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {98.8781 * x - 4463.4137}')
+            messages.success(request, f'The predicted number of cases will be about {-213.2234 * x + 28880}')
             return redirect('graphs-nebraska')
     else:
         form = NeForm()
@@ -460,7 +460,7 @@ def nvcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {217.9531 * x - 13850}')
+            messages.success(request, f'The predicted number of cases will be about {-251.4789 * x + 67260}')
             return redirect('graphs-nevada')
     else:
         form = NvForm()
@@ -472,7 +472,7 @@ def nhcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {59.9793 * x - 2218.6178}')
+            messages.success(request, f'The predicted number of cases will be about {-28.0030 * x + 5864.6966}')
             return redirect('graphs-new-hampshire')
     else:
         form = NhForm()
@@ -484,7 +484,7 @@ def njcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {412.4337 * x - 15980}')
+            messages.success(request, f'The predicted number of cases will be about {-88.7309 * x + 27940}')
             return redirect('graphs-new-jersey')
     else:
         form = NjForm()
@@ -496,7 +496,7 @@ def nmcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {41.0094 * x - 2298.2193}')
+            messages.success(request, f'The predicted number of cases will be about {-95.7607 * x + 13100}')
             return redirect('graphs-new-mexico')
     else:
         form = NmForm()
@@ -508,7 +508,7 @@ def nycalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {4765.4244 * x - 188600}')
+            messages.success(request, f'The predicted number of cases will be about {-140.8511 * x + 42010}')
             return redirect('graphs-new-york')
     else:
         form = NyForm()
@@ -520,7 +520,7 @@ def nccalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {174.2733 * x - 10100}')
+            messages.success(request, f'The predicted number of cases will be about {-383.1406 * x + 52380}')
             return redirect('graphs-north-carolina')
     else:
         form = NcForm()
@@ -532,7 +532,7 @@ def ndcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {31.2907 * x - 936.0486}')
+            messages.success(request, f'The predicted number of cases will be about {-87.3570 * x + 10100}')
             return redirect('graphs-north-dakota')
     else:
         form = NdForm()
@@ -544,7 +544,7 @@ def ohcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {146.9430 * x - 6367.5828}')
+            messages.success(request, f'The predicted number of cases will be about {-532.1169 * x + 60760}')
             return redirect('graphs-ohio')
     else:
         form = OhForm()
@@ -556,7 +556,7 @@ def okcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {36.6413 * x - 1921.0990}')
+            messages.success(request, f'The predicted number of cases will be about {-409.5571 * x + 45900}')
             return redirect('graphs-oklahoma')
     else:
         form = OkForm()
@@ -568,7 +568,7 @@ def orcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {45.0619 * x - 2162.8279}')
+            messages.success(request, f'The predicted number of cases will be about {6.9334 * x + 4028.1172}')
             return redirect('graphs-oregon')
     else:
         form = OrForm()
@@ -580,7 +580,7 @@ def pacalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {574.7566 * x - 2.568e+04}')
+            messages.success(request, f'The predicted number of cases will be about {-325.8332 * x + 57180}')
             return redirect('graphs-pennsylvania')
     else:
         form = PaForm()
@@ -592,7 +592,7 @@ def ricalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {279.2690 * x - 12890}')
+            messages.success(request, f'The predicted number of cases will be about {-141.4202 * x + 26500}')
             return redirect('graphs-rhode-island')
     else:
         form = RiForm()
@@ -604,7 +604,7 @@ def sccalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {75.1662 * x - 4418.8077}')
+            messages.success(request, f'The predicted number of cases will be about {-218.2239 * x + 28170}')
             return redirect('graphs-south-carolina')
     else:
         form = ScForm()
@@ -616,7 +616,7 @@ def sdcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {59.2707 * x - 1831.7510}')
+            messages.success(request, f'The predicted number of cases will be about {-75.7709 * x + 10840}')
             return redirect('graphs-south-dakota')
     else:
         form = SdForm()
@@ -628,7 +628,7 @@ def tncalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {167.2234 * x - 9287.2448}')
+            messages.success(request, f'The predicted number of cases will be about {-694.3984 * x + 80420}')
             return redirect('graphs-tennessee')
     else:
         form = TnForm()
@@ -640,7 +640,7 @@ def txcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {528.5798 * x - 35280}')
+            messages.success(request, f'The predicted number of cases will be about {-3158.5561 * x + 367000}')
             return redirect('graphs-texas')
     else:
         form = TxForm()
@@ -652,7 +652,7 @@ def utcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {148.8861 * x - 6724.3751}')
+            messages.success(request, f'The predicted number of cases will be about {-146.1154 * x + 32510}')
             return redirect('graphs-utah')
     else:
         form = UtForm()
@@ -664,7 +664,7 @@ def vtcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {9.7194 * x - 264.7687}')
+            messages.success(request, f'The predicted number of cases will be about {-4.5245 * x + 1066.8295}')
             return redirect('graphs-vermont')
     else:
         form = VtForm()
@@ -676,7 +676,7 @@ def vacalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {304.0044 * x - 15550}')
+            messages.success(request, f'The predicted number of cases will be about {-223.7908 * x + 35260}')
             return redirect('graphs-virginia')
     else:
         form = VaForm()
@@ -688,7 +688,7 @@ def wacalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {305.9589 * x - 13660}')
+            messages.success(request, f'The predicted number of cases will be about {14.2838 * x + 14890}')
             return redirect('graphs-washington')
     else:
         form = WaForm()
@@ -700,7 +700,7 @@ def wvcalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {5.3579 * x - 240.0965}')
+            messages.success(request, f'The predicted number of cases will be about {-77.1864 * x + 7571.8968}')
             return redirect('graphs-west-virginia')
     else:
         form = WvForm()
@@ -712,7 +712,7 @@ def wicalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {181.1103 * x - 6667.8346}')
+            messages.success(request, f'The predicted number of cases will be about {-376.0309 * x + 49090}')
             return redirect('graphs-wisconsin')
     else:
         form = WiForm()
@@ -724,7 +724,7 @@ def wycalculate(request):
         if form.is_valid():
             form.save()
             x = form.cleaned_data.get('x')
-            messages.success(request, f'The predicted number of cases will be about {3.7826 * x - 118.9053}')
+            messages.success(request, f'The predicted number of cases will be about {-5.7569 * x + 937.5720}')
             return redirect('graphs-wyoming')
     else:
         form = WyForm()

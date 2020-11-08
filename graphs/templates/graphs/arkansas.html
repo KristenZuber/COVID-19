@@ -3,8 +3,12 @@
   <div class="jumbotron">
   <h1 class="display-3">Pulaski County Arkansas</h1>
   <hr class="my-4">
-  <p class = "display-4">How did Arkansas handle COVID-19?<br></p>
-  <p><b>No shelter-in-place orders.</b></p>
+  <legend class = "border-bottom mb-4">How did Arkansas handle COVID-19?<br></legend>
+  <p>No shelter-in-place orders.</p>
+  <p>Mask mandate implemented on July 20</p>
+  <p>Reopening status: Reopening</p>
+  <legend class = "border-bottom mb-4">Population Density: <br></legend>
+  <p>469 people per square mile</p>
   <hr class="my-4">
   <div class="row">
   <ul>
@@ -19,10 +23,7 @@
     {% endfor %}
   </ul>
 </div>
-<p>For Arkansas, predictions can be made using the formula <b>y = 32.4029x - 1803.5874</b>.
-  The R² = 0.552, which is not the strongest correlation in the study; However,
-  the p-value is much lower than 0.01, which indicates that this correlation is still likely not due to chance alone.
-</p>
+
   <legend class = "border-bottom mb-4">Do you want to make a prediction?</legend>
     <a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'ak-predict' %}">Yes!</a>
 <p class="lead">

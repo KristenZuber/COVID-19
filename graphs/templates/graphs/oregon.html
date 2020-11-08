@@ -3,8 +3,11 @@
   <div class="jumbotron">
   <h1 class="display-3">Multnomah County Oregon</h1>
   <hr class="my-4">
-  <p class = "display-4">How did Oregon handle COVID-19?<br></p>
-  <p><b>Shelter-in-place: March 23 to {paused reopening as of 7/23/2020}.</b></p>
+  <legend class = "border-bottom mb-4">How did Oregon handle COVID-19?<br></legend>
+  <p>Shelter-in-place: March 23 to May 15.</p>
+  <p>Reopening status: Pausing</p>
+  <legend class = "border-bottom mb-4">Population Density: <br></legend>
+  <p>1,705 people per square mile</p>
   <hr class="my-4">
   <div class="row">
   <ul>
@@ -19,10 +22,7 @@
     {% endfor %}
   </ul>
 </div>
-<p>For Oregon, predictions can be made using the formula <b>y = 45.0619x - 2162.8279</b>.
-  The R² = 0.489, which is not one of the stronger correlations in the study. Nevertheless,
-  the p-value is much lower than 0.01, which indicates that this correlation is likely not due to chance alone.
-</p>
+
 <legend class = "border-bottom mb-4">Do you want to make a prediction?</legend>
   <a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'or-predict' %}">Yes!</a>
   <p class="lead">

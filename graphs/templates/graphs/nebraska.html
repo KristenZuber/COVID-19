@@ -3,8 +3,11 @@
   <div class="jumbotron">
   <h1 class="display-3">Douglas County Nebraska</h1>
   <hr class="my-4">
-  <p class = "display-4">How did Nebraska handle COVID-19?<br></p>
-  <p><b>No shelter-in-place orders.</b></p>
+  <legend class = "border-bottom mb-4">How did Nebraska handle COVID-19?<br></legend>
+  <p>No shelter-in-place orders.</p>
+  <p>Reopening status: Reopened</p>
+  <legend class = "border-bottom mb-4">Population Density: <br></legend>
+  <p>1,574 people per square mile</p>
   <hr class="my-4">
   <div class="row">
   <ul>
@@ -19,10 +22,7 @@
     {% endfor %}
   </ul>
 </div>
-<p>For Nebraska, predictions can be made using the formula <b>y = 98.8781x - 4463.4137</b>.
-  The R² = 0.562, which is not one of the stronger correlations in the study. Nevertheless,
-  the p-value is much lower than 0.01, which indicates that this correlation is likely not due to chance alone.
-</p>
+
 <legend class = "border-bottom mb-4">Do you want to make a prediction?</legend>
   <a class = "btn btn-secondary btn-sm mt-1 mb-1" href = "{% url 'ne-predict' %}">Yes!</a>
   <p class="lead">
