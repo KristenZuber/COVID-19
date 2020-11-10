@@ -10,6 +10,7 @@
   <p>Reopening status: Paused.</p>
   <legend class = "border-bottom mb-4">Population Density: <br></legend>
   <p>595 people per square mile</p>
+    <hr class="my-4">
   <div class="row">
   <ul>
     {% for bama in alabama reversed  %}
@@ -18,7 +19,7 @@
           <img style="height: 350px; width: 310%; display: center-block;" src= "{{ bama.image.url }}" alt="Card image">
         </blockquote>
     </div>
-    <p>{{ alabama.description }}</p>
+    <p>{{ bama.description }}</p>
     <hr class="my-4">
     {% endfor %}
   </ul>
